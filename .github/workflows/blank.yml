@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class taxCalculation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("How much do you make in a week? ");
+        double income = scanner.nextDouble();
+
+        double taxRate;
+
+        if (income < 500) {
+            taxRate = 0.10; // 10%
+        } else if (income < 1500) {
+            taxRate = 0.15; // 15%
+        } else if (income < 2500) {
+            taxRate = 0.20; // 20%
+        } else {
+            taxRate = 0.30; // 30%
+        }
+
+        double taxesWithHeld = income * taxRate;
+        System.out.println("Your weekly average tax withholding is: $" + taxesWithHeld);
+    }
+}
