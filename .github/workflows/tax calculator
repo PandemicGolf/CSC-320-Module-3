@@ -10,13 +10,13 @@ public class taxCalculation {
         double taxRate;
 
         if (income < 500) {
-            taxRate = 0.10; // 10%
+            taxRate = 0.10; 
         } else if (income < 1500) {
-            taxRate = 0.15; // 15%
+            taxRate = 0.15; 
         } else if (income < 2500) {
-            taxRate = 0.20; // 20%
+            taxRate = 0.20; 
         } else {
-            taxRate = 0.30; // 30%
+            taxRate = 0.30; 
         }
 
         double taxesWithHeld = income * taxRate;
